@@ -83,6 +83,7 @@ header
     margin: 0;
     padding: 10px;
     font-weight: 300;
+    left: 3%;
     .centerVertical;
   }
 }
@@ -118,20 +119,66 @@ section
     .box-sizing
   }
 
-  .title
+  .legends
   {
+    position: relative;
+    z-index: 9;
     font-family: 'Lato',sans-serif;
     font-weight: 300;
-    float: right;
-    left: 6%;
+    font-size: 11px;
+
+    width: 66%;
     position: absolute;
-    top: 384px;
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    font-size: 14px;
+    left: 50%;
+    top: 257px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    > div
+    {
+      width: 30px;
+      position: absolute;
+
+      > span
+      {
+        line-height: 15px;
+      }
+
+      > .average
+      {
+        position: absolute;
+        bottom: -44px;
+        width: 100px;
+      }
+    }
+
+    > .left
+    {
+      text-align: right;
+      left: -35px;
+      top: -91px;
+
+      > .average
+      {
+        left: -69px;
+      }
+    }
+
+    > .right
+    {
+      text-align: left;
+      right: -35px;
+      top: -91px;
+
+      > .average
+      {
+        right: -69px;
+      }
+    }
   }
+
 }
 
 footer
