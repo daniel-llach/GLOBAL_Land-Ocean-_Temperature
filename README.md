@@ -1,2 +1,3 @@
 # GLOBAL_Land-Ocean-_Temperature
-Programming Assignment 1: Visualize Data Using a Chart
+Programming Assignment 1: Visualize Data Using a Chart.
+More info in *public folder*
