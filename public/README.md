@@ -18,3 +18,13 @@ setColor: function(degree){
   return "hsl(" + hue + ", 100%, 50%)";
 }
 ```
+In the case of decade the formula its a little different, this difference is to show in a better way its characteristic tone ( hot / cold):
+```javascript
+setColor: function(degree){
+  var hue;
+  Decade.Color = function(){
+    hue = -0.3 * (1.0 - degree) * 240
+    return "hsl(" + hue + ", 100%, 50%)";
+  }
+}
+```
