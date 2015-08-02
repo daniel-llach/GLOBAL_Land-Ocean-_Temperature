@@ -10,7 +10,7 @@ chunk coloring the box and the text of the degrees.
 This assets paint boxes that represent the twelves months of every years coloring
 by value.
 
-###* color palette: I use HSL Color System and calculate this value
+###* color palette: I use HSL Color System and calculate each value this way:
 ```javascript
 setColor: function(degree){
   var per = degree * 100 / ( 80 * 250 );
