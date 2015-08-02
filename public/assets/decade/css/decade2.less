@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Vollkorn);
+
+//// setting custom class ////
+
+
+.translate (@x: -50%, @y: -50%)
+{
+    -webkit-transform: translate( @x, @y );
+    -moz-transform: translate( @x, @y );
+    -o-transform: translate( @x, @y );
+    transform: translate( @x, @y );
+}
+
+.center
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  .translate(-50%, -50%);
+
+}
+
+.centerVertical
+{
+  position: absolute;
+  top: 50%;
+
+  .translate(0, -50%);
+
+}
+
+.border-radius(@radius: 10px)
+{
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.box-sizing(@box: border-box)
+{
+    -webkit-box-sizing: @box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: @box;    /* Firefox, other Gecko */
+    box-sizing: @box;         /* Opera/IE 8+ */
+}
+
+
+//////// STYLE ///////
+
+.decades
+{
+  width: 66%;
+  .center;
+
+
+  > .decade
+  {
+    width: 50px;
+    height: 135px;
+    display: block;
+    background-color: #fbfbfb;
+    float: left;
+    margin: 5px;
+    position: relative;
+
+    > div
+    {
+      display: none;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      font-family: "Arial";
+      // color: rgb(141, 141, 117);
+    }
+
+    .celsius
+    {
+        top: -34px;
+    }
+
+    .fahrenheit
+    {
+        bottom: -30px;
+    }
+
+    .year
+    {
+      color: #fff !important;
+      font-size: 8px;
+      display: block !important;
+      .center;
+    }
+  }
+
+  .show
+  {
+    display: block;
+  }
+}
