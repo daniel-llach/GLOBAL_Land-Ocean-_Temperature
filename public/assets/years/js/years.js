@@ -46,7 +46,7 @@ define([
               var value = $(event.target).data("value");
               var color = $(event.target).css('backgroundColor');
               console.log(color);
-              $(".viewer").html("<span>" + month + "</span> <span>" + year + " : </span>  <span>" + value + " ºC / </span><span>" + (value*1.8).toFixed(1) + "ºF</span>" );
+              $(".viewer").html("<span>" + month + "</span> <span>" + year + " : </span>  <span>" + value / 100 + " ºC / </span><span>" + (value/100*1.8).toFixed(1) + "ºF</span>" );
               $(".viewer").css({
                 "color": color
               });
